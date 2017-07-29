@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#edc297">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Clicks to get you on target"
+        android:textColor="#000000"
+        android:id="@+id/tvHeader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeader"
+        android:id="@+id/linLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Scope adjustment increment @ 100 yards (in inches)"
+            android:textColor="#000000"
+            android:id="@+id/tvScopeIncrement"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="80"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etScopeincrement"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f0eed3"
+            android:layout_weight="20"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout1"
+        android:id="@+id/linLayout2"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Distance to target in yards"
+            android:textColor="#000000"
+            android:id="@+id/tvTargetYards"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="80"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etTargetYards"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f0eed3"
+            android:layout_weight="20"
+            android:layout_marginRight="5dp"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout2"
+        android:id="@+id/linLayout3"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Inches to adjust bullet impact"
+            android:textColor="#000000"
+            android:id="@+id/tvImpactInches"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="80"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etImpactInches"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f0eed3"
+            android:layout_weight="20"
+            android:layout_marginRight="5dp"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout3"
+        android:id="@+id/linLayout4"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calc"
+            android:id="@+id/btnCalc"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="#5baa37"
+            android:layout_marginRight="50dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnReset"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="#d4d3d3" />
+
+    </LinearLayout>"
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvAnswer"
+        android:text="answer text here"
+        android:textColor="#000000"
+        android:foregroundGravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

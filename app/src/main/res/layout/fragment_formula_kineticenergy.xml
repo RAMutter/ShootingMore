@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#92455b5d">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KE = (w * velocity2) / 450,450"
+        android:textColor="#000000"
+        android:id="@+id/tvKEHeader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeader"
+        android:id="@+id/linLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bullet weight in grains"
+            android:textColor="#000000"
+            android:id="@+id/tvBulletWeight"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="60"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etKEbulletWeight"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f0eed3"
+            android:layout_weight="40"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout1"
+        android:id="@+id/linLayout2"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bullet velocity in fps"
+            android:textColor="#000000"
+            android:id="@+id/tvBulletVelocity"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="60"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etKEBulletVelocity"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f0eed3"
+            android:layout_weight="40"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout2"
+        android:id="@+id/linLayout3"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calc"
+            android:id="@+id/btnKECalc"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="#5baa37"
+            android:layout_marginRight="50dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnKEReset"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="#d4d3d3" />
+
+    </LinearLayout>"
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvKEanswer"
+        android:text="answer text here"
+        android:textColor="#000000"
+        android:foregroundGravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
